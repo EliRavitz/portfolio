@@ -1,0 +1,151 @@
+@import 'variables';
+
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0a192f;
+}
+
+.links_nav {
+  nav {
+    ul {
+      height: 4.5rem;
+      display: flex;
+      justify-content: end;
+      align-items: end;
+      color: #fff;
+      padding: 0 4rem;
+
+      li {
+        list-style: none;
+        margin: 0 1rem;
+
+        img {
+          width: 1.5rem;
+          transition: transform 0.5s ease;
+
+          &:hover {
+            transform: translateY(-4px);
+          }
+        }
+      }
+    }
+  }
+}
+
+.main_nav {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 12rem;
+  height: 100vh;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  background-color: rgb(12, 21, 35);
+  opacity: 0;
+
+  nav {
+    height: 100vh;
+    padding: 10vh 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  img {
+    width: 3rem;
+  }
+
+  li {
+    list-style: none;
+    margin: 1rem 0;
+
+    a {
+      color: #8892b0;
+      text-decoration: none;
+      span {
+        color: $green_color;
+      }
+
+      &:hover {
+        animation: animate2 1s forwards;
+      }
+    }
+    .colored-letter {
+      color: $green_color;
+    }
+  }
+}
+
+@keyframes animate2 {
+  to {
+    color: $green_color;
+    transform: translateY(0);
+  }
+}
+
+.main_area {
+  margin: 5vw 20vw;
+}
+
+.starting_area {
+  font-family: $main_font;
+  letter-spacing: 2px;
+  h3 {
+    color: $green_color;
+    font-weight: 400;
+    margin-bottom: 1rem;
+  }
+  h1 {
+    color: #c2ccec;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
+  h2 {
+    font-size: 4rem;
+    color: #8892b0;
+    margin-bottom: 1rem;
+  }
+  p {
+    color: #8892b0;
+    line-height: 1.8rem;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+  }
+  button {
+    background: none;
+    border: 1px solid $green_color;
+    padding: 1rem;
+    color: $green_color;
+    font-size: 0.9rem;
+    &:hover {
+      cursor: pointer;
+      animation: animate1 1s ease-out forwards;
+    }
+
+    @keyframes animate1 {
+      to {
+        background-color: #64ffdb1d;
+      }
+    }
+  }
+}
+.element-move {
+  opacity: 0;
+  transform: translateY(-25px);
+}
+
+.element-appear {
+  animation: page_opens_animate1 0.3s forwards;
+}
+
+@keyframes page_opens_animate1 {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

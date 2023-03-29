@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="links_nav">
+      <nav>
+        <ul>
+          <li class="element-move">
+            <a href="/">
+              <img src="/photos/linkedin-2.png" alt="LinkedIn" />
+            </a>
+          </li>
+          <li class="element-move">
+            <a href="/">
+              <img src="/photos/github-2.png" alt="github" />
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="main_nav element-move">
+      <nav>
+        <div>
+          <a href="/">
+            <img src="/photos/E.png" alt="logo" />
+          </a>
+        </div>
+        <ul>
+          <li class="element-move">
+            <a href="/"><span>A</span>bout</a>
+          </li>
+          <li class="element-move">
+            <a href="/"><span>E</span>xperience</a>
+          </li>
+          <li class="element-move">
+            <a href="/"><span>C</span>ontact</a>
+          </li>
+          <li class="element-move">
+            <a href="/"><span>P</span>rojects</a>
+          </li>
+          <li class="element-move">
+            <a href="/"> <span>R</span>esume </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="main_area">
+      <div class="starting_area">
+        <h3 class="element-move">Hi, my name is</h3>
+        <h1 class="element-move">Eli Ravitz</h1>
+        <h2 class="element-move">full stack developer</h2>
+        <p class="element-move">
+          As a full stack developer, I have a passion for creating functional
+          and visually appealing websites.<br />
+          I recently graduated through self-study and have completed various
+          projects that showcase my skills across multiple technologies.
+        </p>
+        <button class="element-move">
+          I'm already convinced , take me to your resume
+        </button>
+      </div>
+    </div>
+  </body>
+  <script>
+    const openingElement = Array.from(
+      document.getElementsByClassName('element-move')
+    )
+
+    const tempArray = openingElement.splice(0, 2)
+    const newOpeningElement = openingElement.concat(tempArray)
+
+    newOpeningElement.forEach((element, i) => {
+      setTimeout(() => {
+        element.classList.add('element-appear')
+      }, 200 * (i + 1))
+    })
+  </script>
+</html>
