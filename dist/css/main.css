@@ -137,9 +137,9 @@ body {
     transform: translateY(0); } }
 
 .main_about {
-  width: 99vw;
-  padding-left: 13rem;
+  width: 80vw;
   margin: 5rem 0;
+  margin-left: 12rem;
   display: flex;
   justify-content: space-around;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -187,75 +187,87 @@ body {
     font-size: 1.2rem; } }
 
 .main_projects {
-  width: 99vw;
+  width: 85vw;
   height: fit-content;
-  padding-left: 13rem;
-  margin: 10rem auto;
-  margin-bottom: 0;
-  color: #c2ccec;
-  font-family: "Roboto", sans-serif;
+  margin: 15rem 0 0 12rem;
   transform: translateY(50px);
   opacity: 0; }
-  .main_projects .main_projects_h2 {
-    margin-left: 5vw;
+  .main_projects div {
+    margin: 0 auto;
     color: #c2ccec;
-    font-size: 2rem;
-    margin-bottom: 2rem; }
-  .main_projects .main_projects_p {
-    margin-left: 5vw;
-    color: #8892b0;
-    font-size: 1.3rem;
-    margin-bottom: 4rem;
-    width: 55vw; }
-  .main_projects .cardArae {
-    width: 70rem;
-    margin: auto;
-    color: black;
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 20rem; }
-    .main_projects .cardArae .card {
-      height: 20rem;
-      width: 15rem;
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      text-align: center;
-      background-color: #0c1523;
-      color: #c2ccec; }
-      .main_projects .cardArae .card:hover {
-        cursor: pointer; }
-      .main_projects .cardArae .card .img1, .main_projects .cardArae .card .img2, .main_projects .cardArae .card .img3, .main_projects .cardArae .card .img4 {
-        width: 14rem;
-        height: 10rem;
-        margin: auto;
-        margin-top: 0.5rem; }
-      .main_projects .cardArae .card .img1 {
-        background: url("/photos/find_the_treasure.png") no-repeat center center/cover; }
-      .main_projects .cardArae .card .img2 {
-        background: url("/photos/wedding-dresses.png") no-repeat center center/cover; }
-      .main_projects .cardArae .card .img3 {
-        background: url("/photos/portfolio.png") no-repeat center center/cover; }
-      .main_projects .cardArae .card .img4 {
-        background: url("/photos/wedding-dresses.png") no-repeat center center/cover; }
-      .main_projects .cardArae .card .div_main_content_card {
-        height: 10rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around; }
-        .main_projects .cardArae .card .div_main_content_card .short_explanation {
-          display: none; }
-        .main_projects .cardArae .card .div_main_content_card .div_Links_content_card img {
-          width: 1.5rem; }
-    .main_projects .cardArae .bigger_Card {
-      animation: bigger_card_animate1 0.3s forwards; }
-      .main_projects .cardArae .bigger_Card .div_main_content_card h2 {
-        animation: bigger_card_animate2 0.3s forwards; }
-      .main_projects .cardArae .bigger_Card .div_main_content_card .short_explanation {
-        animation: bigger_card_animate3 1s forwards;
-        display: block;
-        opacity: 0;
-        font-size: 0.7rem; }
-      .main_projects .cardArae .bigger_Card .div_main_content_card li img {
-        animation: bigger_card_animate4 0.3s forwards; }
+    font-family: "Roboto", sans-serif; }
+    .main_projects div .main_projects_h2 {
+      margin-left: 5vw;
+      color: #c2ccec;
+      font-size: 2rem;
+      margin-bottom: 2rem; }
+    .main_projects div .main_projects_p {
+      margin-left: 5vw;
+      color: #8892b0;
+      font-size: 1.3rem;
+      margin-bottom: 4rem;
+      width: 55vw; }
+    .main_projects div .cardArae {
+      width: 70rem;
+      margin: auto;
+      color: black;
+      display: grid;
+      grid-template-columns: 25% 25% 25% 25%;
+      grid-template-rows: 20rem; }
+      .main_projects div .cardArae .card {
+        height: 20rem;
+        width: 15rem;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+        background-color: #0c1523;
+        color: #c2ccec; }
+        .main_projects div .cardArae .card:hover {
+          cursor: pointer; }
+        .main_projects div .cardArae .card .img1, .main_projects div .cardArae .card .img2, .main_projects div .cardArae .card .img3, .main_projects div .cardArae .card .img4 {
+          width: 14rem;
+          height: 10rem;
+          margin: auto;
+          margin-top: 0.5rem; }
+        .main_projects div .cardArae .card .img2 .Paid_project, .main_projects div .cardArae .card .img4 .Paid_project {
+          margin-left: 1px;
+          width: 3.5rem;
+          height: 3.5rem;
+          font-size: 0.8rem;
+          color: #000000;
+          background-color: #64ffda;
+          border-radius: 50px;
+          border: 1px solid black;
+          display: flex;
+          flex-direction: column;
+          justify-content: center; }
+        .main_projects div .cardArae .card .img1 {
+          background: url("/photos/find_the_treasure.png") no-repeat center center/cover; }
+        .main_projects div .cardArae .card .img2 {
+          background: url("/photos/wedding-dresses.png") no-repeat center center/cover; }
+        .main_projects div .cardArae .card .img3 {
+          background: url("/photos/portfolio.png") no-repeat center center/cover; }
+        .main_projects div .cardArae .card .img4 {
+          background: url("/photos/Mishniyot-Beit-Menoha.png") no-repeat center center/cover; }
+        .main_projects div .cardArae .card .div_main_content_card {
+          height: 10rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around; }
+          .main_projects div .cardArae .card .div_main_content_card .short_explanation {
+            display: none; }
+          .main_projects div .cardArae .card .div_main_content_card .div_Links_content_card img {
+            width: 1.5rem; }
+      .main_projects div .cardArae .bigger_Card {
+        animation: bigger_card_animate1 0.3s forwards; }
+        .main_projects div .cardArae .bigger_Card .div_main_content_card h2 {
+          animation: bigger_card_animate2 0.3s forwards; }
+        .main_projects div .cardArae .bigger_Card .div_main_content_card .short_explanation {
+          animation: bigger_card_animate3 1s forwards;
+          display: block;
+          opacity: 0;
+          font-size: 0.7rem; }
+        .main_projects div .cardArae .bigger_Card .div_main_content_card li img {
+          animation: bigger_card_animate4 0.3s forwards; }
 
 @keyframes bigger_card_animate1 {
   to {
@@ -373,7 +385,7 @@ body {
   padding-left: 13rem;
   text-align: center;
   width: 60vw;
-  height: 100vh;
+  height: 70vh;
   margin: auto;
   display: grid;
   justify-content: center;
@@ -387,14 +399,40 @@ body {
     color: #8892b0;
     margin-bottom: 2rem;
     font-size: 1.2rem; }
-  .contact button {
+  .contact a {
     background: none;
     border: 1px solid #64ffda;
-    color: #64ffda;
     font-size: 1.1rem;
     padding: 1rem;
     width: fit-content;
-    margin: auto; }
-    .contact button:hover {
+    margin: auto;
+    color: #64ffda;
+    text-decoration: none; }
+    .contact a:hover {
       cursor: pointer;
-      background-color: #64ffdb1d; }
+      animation: animate_btn_send 1s ease-out forwards; }
+
+@keyframes animate_btn_send {
+  to {
+    background-color: #64ffdb1d; } }
+
+footer {
+  background-color: #0c1523;
+  width: 100%;
+  padding-left: 12rem;
+  height: 12rem;
+  font-family: "Roboto", sans-serif;
+  color: #c2ccec; }
+  footer div {
+    width: 50vw;
+    height: 10rem;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    footer div ul li {
+      margin: 0.5rem;
+      list-style: none; }
+  footer p {
+    margin: auto;
+    width: 5rem; }

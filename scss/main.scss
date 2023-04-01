@@ -188,9 +188,9 @@ body {
 // //////////////about//////////////////////////
 
 .main_about {
-  width: 99vw;
-  padding-left: 13rem;
+  width: 80vw;
   margin: 5rem 0;
+  margin-left: 12rem;
   display: flex;
   justify-content: space-around;
   font-family: $secondary-font;
@@ -256,133 +256,159 @@ body {
 // //////////////projects//////////////////////////
 
 .main_projects {
-  width: 99vw;
+  width: 85vw;
   height: fit-content;
-  padding-left: 13rem;
-  margin: 10rem auto;
-  margin-bottom: 0;
-  color: $Color_for_writing1;
-  font-family: $main-font;
+
+  margin: 15rem 0 0 12rem;
+
   transform: translateY(50px);
   opacity: 0;
-  .main_projects_h2 {
-    margin-left: 5vw;
+  div {
+    margin: 0 auto;
+
     color: $Color_for_writing1;
-    font-size: 2rem;
-    margin-bottom: 2rem;
-  }
-  .main_projects_p {
-    margin-left: 5vw;
-    color: $Color_for_writing2;
-    font-size: 1.3rem;
-    margin-bottom: 4rem;
-    width: 55vw;
-  }
-  .cardArae {
-    width: 70rem;
-    margin: auto;
-    color: black;
-    display: grid;
-
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 20rem;
-
-    .card {
-      height: 20rem;
-      width: 15rem;
-      font-family: $secondary-font;
-      text-align: center;
-      background-color: rgb(12, 21, 35);
+    font-family: $main-font;
+    .main_projects_h2 {
+      margin-left: 5vw;
       color: $Color_for_writing1;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+    .main_projects_p {
+      margin-left: 5vw;
+      color: $Color_for_writing2;
+      font-size: 1.3rem;
+      margin-bottom: 4rem;
+      width: 55vw;
+    }
+    .cardArae {
+      width: 70rem;
+      margin: auto;
+      color: black;
+      display: grid;
 
-      &:hover {
-        cursor: pointer;
-      }
+      grid-template-columns: 25% 25% 25% 25%;
+      grid-template-rows: 20rem;
 
-      %img-sherd {
-        width: 14rem;
-        height: 10rem;
-        margin: auto;
-        margin-top: 0.5rem;
-      }
-      .img1 {
-        background: url('/photos/find_the_treasure.png') no-repeat center
-          center/cover;
-        @extend %img-sherd;
-      }
-      .img2 {
-        background: url('/photos/wedding-dresses.png') no-repeat center
-          center/cover;
-        @extend %img-sherd;
-      }
-      .img3 {
-        background: url('/photos/portfolio.png') no-repeat center center/cover;
-        @extend %img-sherd;
-      }
-      .img4 {
-        background: url('/photos/wedding-dresses.png') no-repeat center
-          center/cover;
-        @extend %img-sherd;
-      }
+      .card {
+        height: 20rem;
+        width: 15rem;
+        font-family: $secondary-font;
+        text-align: center;
+        background-color: rgb(12, 21, 35);
+        color: $Color_for_writing1;
 
-      .div_main_content_card {
-        height: 10rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-
-        .short_explanation {
-          display: none;
+        &:hover {
+          cursor: pointer;
         }
 
-        .div_Links_content_card {
-          img {
-            width: 1.5rem;
+        %img-sherd {
+          width: 14rem;
+          height: 10rem;
+          margin: auto;
+          margin-top: 0.5rem;
+        }
+
+        %Paid_project {
+          margin-left: 1px;
+          width: 3.5rem;
+          height: 3.5rem;
+          font-size: 0.8rem;
+          color: #000000;
+          background-color: $green_color;
+          border-radius: 50px;
+          border: 1px solid black;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+        .img1 {
+          background: url('/photos/find_the_treasure.png') no-repeat center
+            center/cover;
+          @extend %img-sherd;
+        }
+        .img2 {
+          background: url('/photos/wedding-dresses.png') no-repeat center
+            center/cover;
+          @extend %img-sherd;
+
+          .Paid_project {
+            @extend %Paid_project;
+          }
+        }
+        .img3 {
+          background: url('/photos/portfolio.png') no-repeat center center/cover;
+          @extend %img-sherd;
+        }
+        .img4 {
+          background: url('/photos/Mishniyot-Beit-Menoha.png') no-repeat center
+            center/cover;
+          @extend %img-sherd;
+
+          .Paid_project {
+            @extend %Paid_project;
+          }
+        }
+
+        .div_main_content_card {
+          height: 10rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+
+          .short_explanation {
+            display: none;
+          }
+
+          .div_Links_content_card {
+            img {
+              width: 1.5rem;
+            }
           }
         }
       }
-    }
 
-    .bigger_Card {
-      animation: bigger_card_animate1 0.3s forwards;
+      .bigger_Card {
+        animation: bigger_card_animate1 0.3s forwards;
 
-      .div_main_content_card {
-        h2 {
-          animation: bigger_card_animate2 0.3s forwards;
-        }
-        .short_explanation {
-          animation: bigger_card_animate3 1s forwards;
-          display: block;
-          opacity: 0;
-          font-size: 0.7rem;
-        }
-        li {
-          img {
-            animation: bigger_card_animate4 0.3s forwards;
+        .div_main_content_card {
+          h2 {
+            animation: bigger_card_animate2 0.3s forwards;
+          }
+          .short_explanation {
+            animation: bigger_card_animate3 1s forwards;
+            display: block;
+            opacity: 0;
+            font-size: 0.7rem;
+          }
+          li {
+            img {
+              animation: bigger_card_animate4 0.3s forwards;
+            }
           }
         }
       }
-    }
 
-    @keyframes bigger_card_animate1 {
-      to {
-        transform: scale(1.6);
-        transform-origin: center center;
+      @keyframes bigger_card_animate1 {
+        to {
+          transform: scale(1.6);
+          transform-origin: center center;
+        }
       }
-    }
-    @keyframes bigger_card_animate2 {
-      to {
-        font-size: 1.2rem;
+      @keyframes bigger_card_animate2 {
+        to {
+          font-size: 1.2rem;
+        }
       }
-    }
-    @keyframes bigger_card_animate3 {
-      to {
-        opacity: 1;
+      @keyframes bigger_card_animate3 {
+        to {
+          opacity: 1;
+        }
       }
-    }
-    @keyframes bigger_card_animate4 {
-      to {
-        width: 1rem;
+      @keyframes bigger_card_animate4 {
+        to {
+          width: 1rem;
+        }
       }
     }
   }
@@ -525,7 +551,7 @@ body {
   padding-left: 13rem;
   text-align: center;
   width: 60vw;
-  height: 100vh;
+  height: 70vh;
   margin: auto;
   display: grid;
   justify-content: center;
@@ -542,18 +568,54 @@ body {
     margin-bottom: 2rem;
     font-size: 1.2rem;
   }
-  button {
+
+  a {
     background: none;
     border: 1px solid $green_color;
-    color: $green_color;
     font-size: 1.1rem;
     padding: 1rem;
     width: fit-content;
     margin: auto;
+    color: $green_color;
+    text-decoration: none;
 
     &:hover {
       cursor: pointer;
-      background-color: $bright_green_color;
+      animation: animate_btn_send 1s ease-out forwards;
     }
+
+    @keyframes animate_btn_send {
+      to {
+        background-color: $bright_green_color;
+      }
+    }
+  }
+}
+
+footer {
+  background-color: rgb(12, 21, 35);
+  width: 100%;
+  padding-left: 12rem;
+  height: 12rem;
+  font-family: $main-font;
+  color: $Color_for_writing1;
+  div {
+    width: 50vw;
+    height: 10rem;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    ul {
+      li {
+        margin: 0.5rem;
+        list-style: none;
+      }
+    }
+  }
+  p {
+    margin: auto;
+    width: 5rem;
   }
 }
