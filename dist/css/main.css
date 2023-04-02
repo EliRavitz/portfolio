@@ -244,13 +244,13 @@ body {
           flex-direction: column;
           justify-content: center; }
         .main_projects div .cardArae .card .img1 {
-          background: url("/photos/find_the_treasure.png") no-repeat center center/cover; }
+          background: url("/dist/photos/find_the_treasure.png") no-repeat center center/cover; }
         .main_projects div .cardArae .card .img2 {
-          background: url("/photos/wedding-dresses.png") no-repeat center center/cover; }
+          background: url("/dist/photos/wedding-dresses.png") no-repeat center center/cover; }
         .main_projects div .cardArae .card .img3 {
-          background: url("/photos/portfolio.png") no-repeat center center/cover; }
+          background: url("/dist/photos/portfolio.png") no-repeat center center/cover; }
         .main_projects div .cardArae .card .img4 {
-          background: url("/photos/Mishniyot-Beit-Menoha.png") no-repeat center center/cover; }
+          background: url("/dist/photos/Mishniyot-Beit-Menoha.png") no-repeat center center/cover; }
         .main_projects div .cardArae .card .div_main_content_card {
           height: 10rem;
           display: flex;
@@ -349,13 +349,13 @@ body {
       height: 1vh;
       width: 1vw; }
     .Biggest_card_2 .Biggest_card_imgBG1 {
-      background: url("/photos/find_the_treasure.png") no-repeat center center/cover; }
+      background: url("/dist/photos/find_the_treasure.png") no-repeat center center/cover; }
     .Biggest_card_2 .Biggest_card_imgBG2 {
-      background: url("/photos/wedding-dresses.png") no-repeat center center/cover; }
+      background: url("/dist/photos/wedding-dresses.png") no-repeat center center/cover; }
     .Biggest_card_2 .Biggest_card_imgBG3 {
-      background: url("/photos/portfolio.png") no-repeat center center/cover; }
+      background: url("/dist/photos/portfolio.png") no-repeat center center/cover; }
     .Biggest_card_2 .Biggest_card_imgBG4 {
-      background: url("/photos/Mishniyot-Beit-Menoha.png") no-repeat center center/cover; }
+      background: url("/dist/photos/Mishniyot-Beit-Menoha.png") no-repeat center center/cover; }
     .Biggest_card_2 .div_main_content_card {
       height: 60vh;
       display: flex;
