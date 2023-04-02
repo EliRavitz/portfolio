@@ -14,12 +14,18 @@ const biggestCard4 = document.querySelector('.Biggest_card4')
 // ////////////////////////////////////
 
 const openingHandler = () => {
-  const tempArray = openingElement.splice(5, 2)
+  const tempArray = openingElement.splice(5, 1)
   const newOpeningElement = openingElement.concat(tempArray)
   newOpeningElement.forEach((element, i) => {
-    setTimeout(() => {
-      element.classList.add('element-appear')
-    }, 300 * (i + 1))
+    if (i !== newOpeningElement.length - 1) {
+      setTimeout(() => {
+        element.classList.add('element-appear')
+      }, 300 * (i + 1))
+    } else {
+      setTimeout(() => {
+        element.classList.add('Link-appear')
+      }, 300 * (i + 1))
+    }
 
     if (i === openingElement.length - 1)
       setTimeout(() => {
@@ -45,7 +51,7 @@ function animateOnScroll() {
     })
   }
 
-  if (scrollPercent >= 35) {
+  if (scrollPercent >= 45) {
     mainProjects.classList.add('main_projects_animate')
   }
 }
@@ -58,7 +64,20 @@ const cards = document.querySelectorAll('.card')
 function handleMouseOver(event) {
   const element = event.target
   const parentCard = element.closest('.card')
-  if (parentCard) {
+
+  if (
+    parentCard.classList.contains('card1') ||
+    parentCard.classList.contains('card5') ||
+    parentCard.classList.contains('card9')
+  ) {
+    parentCard.classList.add('bigger_Card_left')
+  } else if (
+    parentCard.classList.contains('card4') ||
+    parentCard.classList.contains('card8') ||
+    parentCard.classList.contains('card12')
+  ) {
+    parentCard.classList.add('bigger_Card_right')
+  } else {
     parentCard.classList.add('bigger_Card')
   }
 }
@@ -69,6 +88,8 @@ function handleMouseOut(event) {
 
   if (parentCard && !parentCard.classList.contains('Biggest_card')) {
     parentCard.classList.remove('bigger_Card')
+    parentCard.classList.remove('bigger_Card_right')
+    parentCard.classList.remove('bigger_Card_left')
   }
 }
 

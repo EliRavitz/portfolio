@@ -1,0 +1,7 @@
+@mixin bigger-card($right-offset) {
+  @if (position($right-offset, right) < 16px) {
+    animation: bigger_card_animate2_right_side 0.3s forwards;
+  } @else {
+    animation: bigger_card_animate1 0.3s forwards;
+  }
+}

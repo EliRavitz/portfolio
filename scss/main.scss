@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'functions';
 
 * {
   padding: 0%;
@@ -179,12 +180,17 @@ body {
   animation: page_opens_animate1 0.3s forwards;
 }
 
+.Link-appear {
+  animation: page_opens_animate1 0.7s forwards;
+}
+
 @keyframes page_opens_animate1 {
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
+
 // //////////////about//////////////////////////
 
 .main_about {
@@ -368,9 +374,9 @@ body {
         }
       }
 
-      .bigger_Card {
-        animation: bigger_card_animate1 0.3s forwards;
-
+      .bigger_Card,
+      .bigger_Card_left,
+      .bigger_Card_riget {
         .div_main_content_card {
           h2 {
             animation: bigger_card_animate2 0.3s forwards;
@@ -388,11 +394,34 @@ body {
           }
         }
       }
+      .bigger_Card {
+        animation: bigger_card_animate1 0.3s forwards;
+      }
 
+      .bigger_Card_left {
+        animation: bigger_card_animate1_left 0.3s forwards;
+      }
+      .bigger_Card_right {
+        animation: bigger_card_animate1_right 0.3s forwards;
+      }
       @keyframes bigger_card_animate1 {
         to {
           transform: scale(1.6);
           transform-origin: center center;
+        }
+      }
+
+      @keyframes bigger_card_animate1_left {
+        to {
+          transform: scale(1.6);
+          transform-origin: left;
+        }
+      }
+      @keyframes bigger_card_animate1_right {
+        to {
+          transform-origin: right;
+          transform: scale(1.6);
+          transform: scale(1.6);
         }
       }
       @keyframes bigger_card_animate2 {
@@ -474,7 +503,7 @@ body {
       @extend %Biggest_card_img_sherd;
     }
     .Biggest_card_imgBG4 {
-      background: url('/photos/wedding-dresses.png') no-repeat center
+      background: url('/photos/Mishniyot-Beit-Menoha.png') no-repeat center
         center/cover;
       @extend %Biggest_card_img_sherd;
     }

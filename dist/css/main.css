@@ -131,6 +131,9 @@ body {
 .element-appear {
   animation: page_opens_animate1 0.3s forwards; }
 
+.Link-appear {
+  animation: page_opens_animate1 0.7s forwards; }
+
 @keyframes page_opens_animate1 {
   to {
     opacity: 1;
@@ -257,22 +260,43 @@ body {
             display: none; }
           .main_projects div .cardArae .card .div_main_content_card .div_Links_content_card img {
             width: 1.5rem; }
+      .main_projects div .cardArae .bigger_Card .div_main_content_card h2,
+      .main_projects div .cardArae .bigger_Card_left .div_main_content_card h2,
+      .main_projects div .cardArae .bigger_Card_riget .div_main_content_card h2 {
+        animation: bigger_card_animate2 0.3s forwards; }
+      .main_projects div .cardArae .bigger_Card .div_main_content_card .short_explanation,
+      .main_projects div .cardArae .bigger_Card_left .div_main_content_card .short_explanation,
+      .main_projects div .cardArae .bigger_Card_riget .div_main_content_card .short_explanation {
+        animation: bigger_card_animate3 1s forwards;
+        display: block;
+        opacity: 0;
+        font-size: 0.7rem; }
+      .main_projects div .cardArae .bigger_Card .div_main_content_card li img,
+      .main_projects div .cardArae .bigger_Card_left .div_main_content_card li img,
+      .main_projects div .cardArae .bigger_Card_riget .div_main_content_card li img {
+        animation: bigger_card_animate4 0.3s forwards; }
       .main_projects div .cardArae .bigger_Card {
         animation: bigger_card_animate1 0.3s forwards; }
-        .main_projects div .cardArae .bigger_Card .div_main_content_card h2 {
-          animation: bigger_card_animate2 0.3s forwards; }
-        .main_projects div .cardArae .bigger_Card .div_main_content_card .short_explanation {
-          animation: bigger_card_animate3 1s forwards;
-          display: block;
-          opacity: 0;
-          font-size: 0.7rem; }
-        .main_projects div .cardArae .bigger_Card .div_main_content_card li img {
-          animation: bigger_card_animate4 0.3s forwards; }
+      .main_projects div .cardArae .bigger_Card_left {
+        animation: bigger_card_animate1_left 0.3s forwards; }
+      .main_projects div .cardArae .bigger_Card_right {
+        animation: bigger_card_animate1_right 0.3s forwards; }
 
 @keyframes bigger_card_animate1 {
   to {
     transform: scale(1.6);
     transform-origin: center center; } }
+
+@keyframes bigger_card_animate1_left {
+  to {
+    transform: scale(1.6);
+    transform-origin: left; } }
+
+@keyframes bigger_card_animate1_right {
+  to {
+    transform-origin: right;
+    transform: scale(1.6);
+    transform: scale(1.6); } }
 
 @keyframes bigger_card_animate2 {
   to {
@@ -331,7 +355,7 @@ body {
     .Biggest_card_2 .Biggest_card_imgBG3 {
       background: url("/photos/portfolio.png") no-repeat center center/cover; }
     .Biggest_card_2 .Biggest_card_imgBG4 {
-      background: url("/photos/wedding-dresses.png") no-repeat center center/cover; }
+      background: url("/photos/Mishniyot-Beit-Menoha.png") no-repeat center center/cover; }
     .Biggest_card_2 .div_main_content_card {
       height: 60vh;
       display: flex;
