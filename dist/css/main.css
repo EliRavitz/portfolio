@@ -1,34 +1,28 @@
 * {
   padding: 0%;
   margin: 0%;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 body {
   background-color: #0a192f;
-  scroll-snap-type: proximity;
-}
+  scroll-snap-type: proximity; }
 
 ::-webkit-scrollbar {
-  width: 12px;
-}
+  width: 12px; }
 
 /* Track */
 ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px grey;
-  border-radius: 10px;
-}
+  border-radius: 10px; }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #8892b0;
-  border-radius: 10px;
-}
+  border-radius: 10px; }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #c2ccec;
-}
+  background: #c2ccec; }
 
 .main_nav {
   position: fixed;
@@ -39,143 +33,112 @@ body {
   text-align: center;
   font-family: 'Inter', sans-serif;
   background-color: #0c1523;
-  opacity: 0;
-}
-.main_nav nav {
-  height: 100vh;
-  padding: 10vh 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.main_nav img {
-  width: 3rem;
-}
-.main_nav ul {
-  margin-bottom: 5vh;
-}
-.main_nav ul li {
-  list-style: none;
-  margin: 1rem 0;
-}
-.main_nav ul li a {
-  color: #8892b0;
-  text-decoration: none;
-}
-.main_nav ul li a span {
-  color: #64ffda;
-}
-.main_nav ul li a:hover {
-  animation: animate2 1s forwards;
-}
-.main_nav ul li .colored-letter {
-  color: #64ffda;
-}
-.main_nav ul li:last-child {
-  padding-top: 1rem;
-}
-.main_nav ul li:last-child a {
-  border: 1px solid #64ffda;
-  border-radius: 2px;
-  width: fit-content;
-  padding: 0.8rem;
-}
+  opacity: 0; }
+  .main_nav nav {
+    height: 100vh;
+    padding: 10vh 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+  .main_nav img {
+    width: 3rem; }
+  .main_nav ul {
+    margin-bottom: 5vh; }
+    .main_nav ul li {
+      list-style: none;
+      margin: 1rem 0; }
+      .main_nav ul li a {
+        color: #8892b0;
+        text-decoration: none; }
+        .main_nav ul li a span {
+          color: #64ffda; }
+        .main_nav ul li a:hover {
+          animation: animate2 1s forwards; }
+      .main_nav ul li .colored-letter {
+        color: #64ffda; }
+      .main_nav ul li:last-child {
+        padding-top: 1rem; }
+        .main_nav ul li:last-child a {
+          border: 1px solid #64ffda;
+          border-radius: 2px;
+          width: fit-content;
+          padding: 0.8rem; }
 
 @keyframes animate2 {
   to {
     color: #64ffda;
-    transform: translateY(0);
-  }
-}
+    transform: translateY(0); } }
 
 .main_area {
   height: 100vh;
-  width: 99vw;
-}
+  width: 99vw; }
 
 .links_nav nav ul {
   height: 4.5rem;
   display: flex;
   justify-content: end;
   align-items: end;
-  padding: 0 4rem;
-}
-.links_nav nav ul li {
-  list-style: none;
-  margin: 0 1rem;
-}
-.links_nav nav ul li img {
-  width: 1.5rem;
-  transition: transform 0.5s ease;
-}
-.links_nav nav ul li img:hover {
-  transform: translateY(-4px);
-}
+  padding: 0 4rem; }
+  .links_nav nav ul li {
+    list-style: none;
+    margin: 0 1rem; }
+    .links_nav nav ul li img {
+      width: 1.5rem;
+      transition: transform 0.5s ease; }
+      .links_nav nav ul li img:hover {
+        transform: translateY(-4px); }
 
 .starting_area {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   letter-spacing: 2px;
   margin-left: 25vw;
-  margin-top: 15vh;
-}
-.starting_area h3 {
-  color: #64ffda;
-  font-weight: 400;
-  margin-bottom: 1rem;
-}
-.starting_area h1 {
-  color: #c2ccec;
-  font-size: 4rem;
-  margin-bottom: 1rem;
-}
-.starting_area h2 {
-  font-size: 4rem;
-  color: #8892b0;
-  margin-bottom: 1rem;
-}
-.starting_area p {
-  color: #8892b0;
-  line-height: 1.8rem;
-  margin-bottom: 3rem;
-  letter-spacing: 1px;
-}
-.starting_area button {
-  background: none;
-  border: 1px solid #64ffda;
-  padding: 1rem;
-  color: #64ffda;
-  font-size: 0.9rem;
-}
-.starting_area button:hover {
-  cursor: pointer;
-  animation: animate1 1s ease-out forwards;
-}
+  margin-top: 15vh; }
+  .starting_area h3 {
+    color: #64ffda;
+    font-weight: 400;
+    margin-bottom: 1rem; }
+  .starting_area h1 {
+    color: #c2ccec;
+    font-size: 4rem;
+    margin-bottom: 1rem; }
+  .starting_area h2 {
+    font-size: 4rem;
+    color: #8892b0;
+    margin-bottom: 1rem; }
+  .starting_area p {
+    color: #8892b0;
+    line-height: 1.8rem;
+    margin-bottom: 3rem;
+    letter-spacing: 1px; }
+  .starting_area a {
+    text-decoration: none;
+    background: none;
+    border: 1px solid #64ffda;
+    padding: 1rem;
+    color: #64ffda;
+    font-size: 0.9rem; }
+    .starting_area a:hover {
+      cursor: pointer;
+      animation: animate1 1s ease-out forwards; }
 
 @keyframes animate1 {
   to {
-    background-color: #64ffdb1d;
-  }
-}
+    background-color: #64ffdb1d; } }
 
 .element-move {
   opacity: 0;
-  transform: translateY(-25px);
-}
+  transform: translateY(-25px); }
 
 .element-appear {
-  animation: page_opens_animate1 0.3s forwards;
-}
+  animation: page_opens_animate1 0.3s forwards; }
 
 .Link-appear {
-  animation: page_opens_animate1 0.7s forwards;
-}
+  animation: page_opens_animate1 0.7s forwards; }
 
 @keyframes page_opens_animate1 {
   to {
     opacity: 1;
-    transform: translateY(0);
-  }
-}
+    transform: translateY(0); } }
 
 .main_about {
   width: 80vw;
@@ -184,63 +147,49 @@ body {
   margin-left: 12rem;
   display: flex;
   justify-content: space-around;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   transform: translateY(50px);
-  opacity: 0;
-}
-.main_about-2 {
-  width: 50vw;
-  height: fit-content;
-  border-right: 1px solid #64ffda;
-  padding-right: 2rem;
-}
-.main_about-2 h2 {
-  color: #c2ccec;
-  font-size: 2rem;
-  margin-bottom: 2rem;
-}
-.main_about-2 p {
-  color: #8892b0;
-  font-size: 1.3rem;
-}
-.main_about .skills {
-  padding-left: 2rem;
-}
-.main_about .skills h2 {
-  color: #c2ccec;
-  font-size: 2rem;
-  margin-bottom: 2rem;
-}
-.main_about .skills ul {
-  color: #8892b0;
-  font-size: 1rem;
-}
-.main_about .skills ul li {
-  list-style: none;
-  margin-bottom: 0.5rem;
-}
+  opacity: 0; }
+  .main_about-2 {
+    width: 50vw;
+    height: fit-content;
+    border-right: 1px solid #64ffda;
+    padding-right: 2rem; }
+    .main_about-2 h2 {
+      color: #c2ccec;
+      font-size: 2rem;
+      margin-bottom: 2rem; }
+    .main_about-2 p {
+      color: #8892b0;
+      font-size: 1.3rem; }
+  .main_about .skills {
+    padding-left: 2rem; }
+    .main_about .skills h2 {
+      color: #c2ccec;
+      font-size: 2rem;
+      margin-bottom: 2rem; }
+    .main_about .skills ul {
+      color: #8892b0;
+      font-size: 1rem; }
+      .main_about .skills ul li {
+        list-style: none;
+        margin-bottom: 0.5rem; }
 
 .main_about_animate {
-  animation: main_about_animate1 1s forwards;
-}
+  animation: main_about_animate1 1s forwards; }
 
 @keyframes main_about_animate1 {
   to {
     transform: translateY(0);
-    opacity: 1;
-  }
-}
+    opacity: 1; } }
 
 .skills_list_light {
-  animation: list_light_animate1 1s forwards;
-}
+  animation: list_light_animate1 1s forwards; }
 
 @keyframes list_light_animate1 {
   to {
     color: #c2ccec;
-    font-size: 1.2rem;
-  }
-}
+    font-size: 1.2rem; } }
 
 .main_projects {
   width: 85vw;
@@ -248,181 +197,121 @@ body {
   margin: 10rem 0 0 12rem;
   padding-top: 5rem;
   transform: translateY(50px);
-  opacity: 0;
-}
-.main_projects div {
-  margin: 0 auto;
-  color: #c2ccec;
-  font-family: 'Roboto', sans-serif;
-}
-.main_projects div .main_projects_h2 {
-  margin-left: 5vw;
-  color: #c2ccec;
-  font-size: 2rem;
-  margin-bottom: 2rem;
-}
-.main_projects div .main_projects_p {
-  margin-left: 5vw;
-  color: #8892b0;
-  font-size: 1.3rem;
-  margin-bottom: 4rem;
-  width: 55vw;
-}
-.main_projects div .cardArae {
-  width: 70rem;
-  margin: auto;
-  color: black;
-  display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: 20rem;
-}
-.main_projects div .cardArae .card {
-  height: 20rem;
-  width: 15rem;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  text-align: center;
-  background-color: #0c1523;
-  color: #c2ccec;
-}
-.main_projects div .cardArae .card:hover {
-  cursor: pointer;
-}
-.main_projects div .cardArae .card .img1,
-.main_projects div .cardArae .card .img2,
-.main_projects div .cardArae .card .img3,
-.main_projects div .cardArae .card .img4 {
-  width: 14rem;
-  height: 10rem;
-  margin: auto;
-  margin-top: 0.5rem;
-}
-.main_projects div .cardArae .card .img2 .Paid_project,
-.main_projects div .cardArae .card .img4 .Paid_project {
-  margin-left: 1px;
-  width: 3.5rem;
-  height: 3.5rem;
-  font-size: 0.8rem;
-  color: #000000;
-  background-color: #64ffda;
-  border-radius: 50px;
-  border: 1px solid black;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.main_projects div .cardArae .card .img1 {
-  background: url('/photos/find_the_treasure.png') no-repeat center center/cover;
-}
-.main_projects div .cardArae .card .img2 {
-  background: url('/photos/wedding-dresses.png') no-repeat center center/cover;
-}
-.main_projects div .cardArae .card .img3 {
-  background: url('/photos/portfolio.png') no-repeat center center/cover;
-}
-.main_projects div .cardArae .card .img4 {
-  background: url('/photos/Mishniyot-Beit-Menoha.png') no-repeat center
-    center/cover;
-}
-.main_projects div .cardArae .card .div_main_content_card {
-  height: 10rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-.main_projects div .cardArae .card .div_main_content_card .short_explanation {
-  display: none;
-}
-.main_projects
-  div
-  .cardArae
-  .card
-  .div_main_content_card
-  .div_Links_content_card
-  img {
-  width: 1.5rem;
-}
-.main_projects div .cardArae .bigger_Card .div_main_content_card h2,
-.main_projects div .cardArae .bigger_Card_left .div_main_content_card h2,
-.main_projects div .cardArae .bigger_Card_riget .div_main_content_card h2 {
-  animation: bigger_card_animate2 0.3s forwards;
-}
-.main_projects
-  div
-  .cardArae
-  .bigger_Card
-  .div_main_content_card
-  .short_explanation,
-.main_projects
-  div
-  .cardArae
-  .bigger_Card_left
-  .div_main_content_card
-  .short_explanation,
-.main_projects
-  div
-  .cardArae
-  .bigger_Card_riget
-  .div_main_content_card
-  .short_explanation {
-  animation: bigger_card_animate3 1s forwards;
-  display: block;
-  opacity: 0;
-  font-size: 0.7rem;
-}
-.main_projects div .cardArae .bigger_Card .div_main_content_card li img,
-.main_projects div .cardArae .bigger_Card_left .div_main_content_card li img,
-.main_projects div .cardArae .bigger_Card_riget .div_main_content_card li img {
-  animation: bigger_card_animate4 0.3s forwards;
-}
-.main_projects div .cardArae .bigger_Card {
-  animation: bigger_card_animate1 0.3s forwards;
-}
-.main_projects div .cardArae .bigger_Card_left {
-  animation: bigger_card_animate1_left 0.3s forwards;
-}
-.main_projects div .cardArae .bigger_Card_right {
-  animation: bigger_card_animate1_right 0.3s forwards;
-}
+  opacity: 0; }
+  .main_projects div {
+    margin: 0 auto;
+    color: #c2ccec;
+    font-family: "Roboto", sans-serif; }
+    .main_projects div .main_projects_h2 {
+      margin-left: 5vw;
+      color: #c2ccec;
+      font-size: 2rem;
+      margin-bottom: 2rem; }
+    .main_projects div .main_projects_p {
+      margin-left: 5vw;
+      color: #8892b0;
+      font-size: 1.3rem;
+      margin-bottom: 4rem;
+      width: 55vw; }
+    .main_projects div .cardArae {
+      width: 70rem;
+      margin: auto;
+      color: black;
+      display: grid;
+      grid-template-columns: 25% 25% 25% 25%;
+      grid-template-rows: 20rem; }
+      .main_projects div .cardArae .card {
+        height: 20rem;
+        width: 15rem;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+        background-color: #0c1523;
+        color: #c2ccec; }
+        .main_projects div .cardArae .card:hover {
+          cursor: pointer; }
+        .main_projects div .cardArae .card .img1, .main_projects div .cardArae .card .img2, .main_projects div .cardArae .card .img3, .main_projects div .cardArae .card .img4 {
+          width: 14rem;
+          height: 10rem;
+          margin: auto;
+          margin-top: 0.5rem; }
+        .main_projects div .cardArae .card .img2 .Paid_project, .main_projects div .cardArae .card .img4 .Paid_project {
+          margin-left: 1px;
+          width: 3.5rem;
+          height: 3.5rem;
+          font-size: 0.8rem;
+          color: #000000;
+          background-color: #64ffda;
+          border-radius: 50px;
+          border: 1px solid black;
+          display: flex;
+          flex-direction: column;
+          justify-content: center; }
+        .main_projects div .cardArae .card .img1 {
+          background: url("/photos/find_the_treasure.png") no-repeat center center/cover; }
+        .main_projects div .cardArae .card .img2 {
+          background: url("/photos/wedding-dresses.png") no-repeat center center/cover; }
+        .main_projects div .cardArae .card .img3 {
+          background: url("/photos/portfolio.png") no-repeat center center/cover; }
+        .main_projects div .cardArae .card .img4 {
+          background: url("/photos/Mishniyot-Beit-Menoha.png") no-repeat center center/cover; }
+        .main_projects div .cardArae .card .div_main_content_card {
+          height: 10rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around; }
+          .main_projects div .cardArae .card .div_main_content_card .short_explanation {
+            display: none; }
+          .main_projects div .cardArae .card .div_main_content_card .div_Links_content_card img {
+            width: 1.5rem; }
+      .main_projects div .cardArae .bigger_Card .div_main_content_card h2,
+      .main_projects div .cardArae .bigger_Card_left .div_main_content_card h2,
+      .main_projects div .cardArae .bigger_Card_riget .div_main_content_card h2 {
+        animation: bigger_card_animate2 0.3s forwards; }
+      .main_projects div .cardArae .bigger_Card .div_main_content_card .short_explanation,
+      .main_projects div .cardArae .bigger_Card_left .div_main_content_card .short_explanation,
+      .main_projects div .cardArae .bigger_Card_riget .div_main_content_card .short_explanation {
+        animation: bigger_card_animate3 1s forwards;
+        display: block;
+        opacity: 0;
+        font-size: 0.7rem; }
+      .main_projects div .cardArae .bigger_Card .div_main_content_card li img,
+      .main_projects div .cardArae .bigger_Card_left .div_main_content_card li img,
+      .main_projects div .cardArae .bigger_Card_riget .div_main_content_card li img {
+        animation: bigger_card_animate4 0.3s forwards; }
+      .main_projects div .cardArae .bigger_Card {
+        animation: bigger_card_animate1 0.3s forwards; }
+      .main_projects div .cardArae .bigger_Card_left {
+        animation: bigger_card_animate1_left 0.3s forwards; }
+      .main_projects div .cardArae .bigger_Card_right {
+        animation: bigger_card_animate1_right 0.3s forwards; }
 
 @keyframes bigger_card_animate1 {
   to {
     transform: scale(1.6);
-    transform-origin: center center;
-  }
-}
+    transform-origin: center center; } }
 
 @keyframes bigger_card_animate1_left {
   to {
     transform: scale(1.6);
-    transform-origin: left;
-  }
-}
+    transform-origin: left; } }
 
 @keyframes bigger_card_animate1_right {
   to {
     transform-origin: right;
     transform: scale(1.6);
-    transform: scale(1.6);
-  }
-}
+    transform: scale(1.6); } }
 
 @keyframes bigger_card_animate2 {
   to {
-    font-size: 1.2rem;
-  }
-}
+    font-size: 1.2rem; } }
 
 @keyframes bigger_card_animate3 {
   to {
-    opacity: 1;
-  }
-}
+    opacity: 1; } }
 
 @keyframes bigger_card_animate4 {
   to {
-    width: 1rem;
-  }
-}
+    width: 1rem; } }
 
 .Biggest_card {
   background-color: rgba(0, 0, 0, 0.552);
@@ -432,122 +321,92 @@ body {
   width: 100vw;
   height: 100vh;
   z-index: 10;
-  display: none;
-}
-.Biggest_card_2 {
-  margin: auto;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  text-align: center;
-  background-color: #0c1523;
-  color: #c2ccec;
-  width: 40vw;
-  height: 1vh;
-  padding: 0 1rem;
-  animation: Biggest_card_animate1 0.5s forwards;
-  position: relative;
-}
-.Biggest_card_2 button {
-  background: none;
-  color: #fff;
-  border: none;
-  position: absolute;
-  left: 1rem;
-  top: 1rem;
-  font-size: 1.5rem;
-  color: #c2ccec;
-}
-.Biggest_card_2 button:hover {
-  cursor: pointer;
-  color: #8892b0;
-}
-.Biggest_card_2 .Biggest_card_imgBG1,
-.Biggest_card_2 .Biggest_card_imgBG2,
-.Biggest_card_2 .Biggest_card_imgBG3,
-.Biggest_card_2 .Biggest_card_imgBG4 {
-  animation: Biggest_card_animate2 0.5s forwards;
-  margin: auto;
-  padding-top: 1rem;
-  height: 1vh;
-  width: 1vw;
-}
-.Biggest_card_2 .Biggest_card_imgBG1 {
-  background: url('/photos/find_the_treasure.png') no-repeat center center/cover;
-}
-.Biggest_card_2 .Biggest_card_imgBG2 {
-  background: url('/photos/wedding-dresses.png') no-repeat center center/cover;
-}
-.Biggest_card_2 .Biggest_card_imgBG3 {
-  background: url('/photos/portfolio.png') no-repeat center center/cover;
-}
-.Biggest_card_2 .Biggest_card_imgBG4 {
-  background: url('/photos/Mishniyot-Beit-Menoha.png') no-repeat center
-    center/cover;
-}
-.Biggest_card_2 .div_main_content_card {
-  height: 60vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-.Biggest_card_2 .div_main_content_card .Extended_explanation {
-  animation: Biggest_card_animate3 3s forwards;
-  opacity: 0;
-}
-.Biggest_card_2 .div_main_content_card .Links_content_card {
-  animation: Biggest_card_animate3 3s forwards;
-  opacity: 0;
-}
-.Biggest_card_2 .div_main_content_card .Links_content_card a {
-  text-decoration: none;
-  color: #c2ccec;
-  color: #fff;
-  margin: 0 0.5rem;
-}
-.Biggest_card_2 .div_main_content_card .Links_content_card a:hover {
-  color: #8892b0;
-}
-.Biggest_card_2 .div_main_content_card .List_content_Biggest_card {
-  animation: Biggest_card_animate3 3s forwards;
-  opacity: 0;
-}
-.Biggest_card_2 .div_main_content_card .List_content_Biggest_card span {
-  margin: 0 0.5rem;
-}
+  display: none; }
+  .Biggest_card_2 {
+    margin: auto;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    background-color: #0c1523;
+    color: #c2ccec;
+    width: 40vw;
+    height: 1vh;
+    padding: 0 1rem;
+    animation: Biggest_card_animate1 0.5s forwards;
+    position: relative; }
+    .Biggest_card_2 button {
+      background: none;
+      color: #fff;
+      border: none;
+      position: absolute;
+      left: 1rem;
+      top: 1rem;
+      font-size: 1.5rem;
+      color: #c2ccec; }
+      .Biggest_card_2 button:hover {
+        cursor: pointer;
+        color: #8892b0; }
+    .Biggest_card_2 .Biggest_card_imgBG1, .Biggest_card_2 .Biggest_card_imgBG2, .Biggest_card_2 .Biggest_card_imgBG3, .Biggest_card_2 .Biggest_card_imgBG4 {
+      animation: Biggest_card_animate2 0.5s forwards;
+      margin: auto;
+      padding-top: 1rem;
+      height: 1vh;
+      width: 1vw; }
+    .Biggest_card_2 .Biggest_card_imgBG1 {
+      background: url("/photos/find_the_treasure.png") no-repeat center center/cover; }
+    .Biggest_card_2 .Biggest_card_imgBG2 {
+      background: url("/photos/wedding-dresses.png") no-repeat center center/cover; }
+    .Biggest_card_2 .Biggest_card_imgBG3 {
+      background: url("/photos/portfolio.png") no-repeat center center/cover; }
+    .Biggest_card_2 .Biggest_card_imgBG4 {
+      background: url("/photos/Mishniyot-Beit-Menoha.png") no-repeat center center/cover; }
+    .Biggest_card_2 .div_main_content_card {
+      height: 60vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around; }
+      .Biggest_card_2 .div_main_content_card .Extended_explanation {
+        animation: Biggest_card_animate3 3s forwards;
+        opacity: 0; }
+      .Biggest_card_2 .div_main_content_card .Links_content_card {
+        animation: Biggest_card_animate3 3s forwards;
+        opacity: 0; }
+        .Biggest_card_2 .div_main_content_card .Links_content_card a {
+          text-decoration: none;
+          color: #c2ccec;
+          color: #fff;
+          margin: 0 0.5rem; }
+        .Biggest_card_2 .div_main_content_card .Links_content_card a:hover {
+          color: #8892b0; }
+      .Biggest_card_2 .div_main_content_card .List_content_Biggest_card {
+        animation: Biggest_card_animate3 3s forwards;
+        opacity: 0; }
+        .Biggest_card_2 .div_main_content_card .List_content_Biggest_card span {
+          margin: 0 0.5rem; }
 
 @keyframes Biggest_card_animate1 {
   to {
     width: 40vw;
-    height: 100vh;
-  }
-}
+    height: 100vh; } }
 
 @keyframes Biggest_card_animate2 {
   to {
     height: 35vh;
-    width: 25vw;
-  }
-}
+    width: 25vw; } }
 
 @keyframes Biggest_card_animate3 {
   to {
-    opacity: 1;
-  }
-}
+    opacity: 1; } }
 
 .open_Biggest_card {
-  display: block;
-}
+  display: block; }
 
 .main_projects_animate {
-  animation: main_projects_animate1 1s forwards;
-}
+  animation: main_projects_animate1 1s forwards; }
 
 @keyframes main_projects_animate1 {
   to {
     transform: translateY(0);
-    opacity: 1;
-  }
-}
+    opacity: 1; } }
 
 .contact {
   padding-left: 13rem;
@@ -558,60 +417,49 @@ body {
   display: grid;
   justify-content: center;
   align-content: center;
-  font-family: 'Roboto', sans-serif;
-}
-.contact h1 {
-  font-size: 3rem;
-  color: #c2ccec;
-  margin-bottom: 2rem;
-}
-.contact p {
-  color: #8892b0;
-  margin-bottom: 2rem;
-  font-size: 1.2rem;
-}
-.contact a {
-  background: none;
-  border: 1px solid #64ffda;
-  font-size: 1.1rem;
-  padding: 1rem;
-  width: fit-content;
-  margin: auto;
-  color: #64ffda;
-  text-decoration: none;
-}
-.contact a:hover {
-  cursor: pointer;
-  animation: animate_btn_send 1s ease-out forwards;
-}
+  font-family: "Roboto", sans-serif; }
+  .contact h1 {
+    font-size: 3rem;
+    color: #c2ccec;
+    margin-bottom: 2rem; }
+  .contact p {
+    color: #8892b0;
+    margin-bottom: 2rem;
+    font-size: 1.2rem; }
+  .contact a {
+    background: none;
+    border: 1px solid #64ffda;
+    font-size: 1.1rem;
+    padding: 1rem;
+    width: fit-content;
+    margin: auto;
+    color: #64ffda;
+    text-decoration: none; }
+    .contact a:hover {
+      cursor: pointer;
+      animation: animate_btn_send 1s ease-out forwards; }
 
 @keyframes animate_btn_send {
   to {
-    background-color: #64ffdb1d;
-  }
-}
+    background-color: #64ffdb1d; } }
 
 footer {
   background-color: #0c1523;
   width: 100%;
   padding-left: 12rem;
   height: 12rem;
-  font-family: 'Roboto', sans-serif;
-  color: #c2ccec;
-}
-footer div {
-  width: 50vw;
-  height: 10rem;
-  margin: auto;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-footer div ul li {
-  margin: 0.5rem;
-  list-style: none;
-}
-footer p {
-  margin: auto;
-  width: 5rem;
-}
+  font-family: "Roboto", sans-serif;
+  color: #c2ccec; }
+  footer div {
+    width: 50vw;
+    height: 10rem;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    footer div ul li {
+      margin: 0.5rem;
+      list-style: none; }
+  footer p {
+    margin: auto;
+    width: 5rem; }

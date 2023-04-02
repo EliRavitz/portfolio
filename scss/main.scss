@@ -152,7 +152,8 @@ body {
     margin-bottom: 3rem;
     letter-spacing: 1px;
   }
-  button {
+  a {
+    text-decoration: none;
     background: none;
     border: 1px solid $green_color;
     padding: 1rem;
