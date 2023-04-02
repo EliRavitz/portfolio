@@ -141,7 +141,8 @@ body {
 
 .main_about {
   width: 80vw;
-  margin: 5rem 0;
+  margin: 0 0 5rem 0;
+  padding-top: 5rem;
   margin-left: 12rem;
   display: flex;
   justify-content: space-around;
@@ -192,7 +193,8 @@ body {
 .main_projects {
   width: 85vw;
   height: fit-content;
-  margin: 15rem 0 0 12rem;
+  margin: 10rem 0 0 12rem;
+  padding-top: 5rem;
   transform: translateY(50px);
   opacity: 0; }
   .main_projects div {
@@ -244,13 +246,13 @@ body {
           flex-direction: column;
           justify-content: center; }
         .main_projects div .cardArae .card .img1 {
-          background: url("/dist/photos/find_the_treasure.png") no-repeat center center/cover; }
+          background: url("/photos/find_the_treasure.png") no-repeat center center/cover; }
         .main_projects div .cardArae .card .img2 {
-          background: url("/dist/photos/wedding-dresses.png") no-repeat center center/cover; }
+          background: url("/photos/wedding-dresses.png") no-repeat center center/cover; }
         .main_projects div .cardArae .card .img3 {
-          background: url("/dist/photos/portfolio.png") no-repeat center center/cover; }
+          background: url("/photos/portfolio.png") no-repeat center center/cover; }
         .main_projects div .cardArae .card .img4 {
-          background: url("/dist/photos/Mishniyot-Beit-Menoha.png") no-repeat center center/cover; }
+          background: url("/photos/Mishniyot-Beit-Menoha.png") no-repeat center center/cover; }
         .main_projects div .cardArae .card .div_main_content_card {
           height: 10rem;
           display: flex;
@@ -349,13 +351,13 @@ body {
       height: 1vh;
       width: 1vw; }
     .Biggest_card_2 .Biggest_card_imgBG1 {
-      background: url("/dist/photos/find_the_treasure.png") no-repeat center center/cover; }
+      background: url("/photos/find_the_treasure.png") no-repeat center center/cover; }
     .Biggest_card_2 .Biggest_card_imgBG2 {
-      background: url("/dist/photos/wedding-dresses.png") no-repeat center center/cover; }
+      background: url("/photos/wedding-dresses.png") no-repeat center center/cover; }
     .Biggest_card_2 .Biggest_card_imgBG3 {
-      background: url("/dist/photos/portfolio.png") no-repeat center center/cover; }
+      background: url("/photos/portfolio.png") no-repeat center center/cover; }
     .Biggest_card_2 .Biggest_card_imgBG4 {
-      background: url("/dist/photos/Mishniyot-Beit-Menoha.png") no-repeat center center/cover; }
+      background: url("/photos/Mishniyot-Beit-Menoha.png") no-repeat center center/cover; }
     .Biggest_card_2 .div_main_content_card {
       height: 60vh;
       display: flex;

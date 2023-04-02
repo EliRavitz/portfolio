@@ -1,5 +1,4 @@
 @import 'variables';
-@import 'functions';
 
 * {
   padding: 0%;
@@ -195,7 +194,8 @@ body {
 
 .main_about {
   width: 80vw;
-  margin: 5rem 0;
+  margin: 0 0 5rem 0;
+  padding-top: 5rem;
   margin-left: 12rem;
   display: flex;
   justify-content: space-around;
@@ -265,8 +265,8 @@ body {
   width: 85vw;
   height: fit-content;
 
-  margin: 15rem 0 0 12rem;
-
+  margin: 10rem 0 0 12rem;
+  padding-top: 5rem;
   transform: translateY(50px);
   opacity: 0;
   div {
@@ -329,12 +329,12 @@ body {
           justify-content: center;
         }
         .img1 {
-          background: url('photos/find_the_treasure.png') no-repeat center
+          background: url('/photos/find_the_treasure.png') no-repeat center
             center/cover;
           @extend %img-sherd;
         }
         .img2 {
-          background: url('photos/wedding-dresses.png') no-repeat center
+          background: url('/photos/wedding-dresses.png') no-repeat center
             center/cover;
           @extend %img-sherd;
 
@@ -343,11 +343,11 @@ body {
           }
         }
         .img3 {
-          background: url('photos/portfolio.png') no-repeat center center/cover;
+          background: url('/photos/portfolio.png') no-repeat center center/cover;
           @extend %img-sherd;
         }
         .img4 {
-          background: url('photos/Mishniyot-Beit-Menoha.png') no-repeat center
+          background: url('/photos/Mishniyot-Beit-Menoha.png') no-repeat center
             center/cover;
           @extend %img-sherd;
 
@@ -489,21 +489,21 @@ body {
       width: 1vw;
     }
     .Biggest_card_imgBG1 {
-      background: url('photos/find_the_treasure.png') no-repeat center
+      background: url('/photos/find_the_treasure.png') no-repeat center
         center/cover;
       @extend %Biggest_card_img_sherd;
     }
     .Biggest_card_imgBG2 {
-      background: url('photos/wedding-dresses.png') no-repeat center
+      background: url('/photos/wedding-dresses.png') no-repeat center
         center/cover;
       @extend %Biggest_card_img_sherd;
     }
     .Biggest_card_imgBG3 {
-      background: url('photos/portfolio.png') no-repeat center center/cover;
+      background: url('/photos/portfolio.png') no-repeat center center/cover;
       @extend %Biggest_card_img_sherd;
     }
     .Biggest_card_imgBG4 {
-      background: url('photos/Mishniyot-Beit-Menoha.png') no-repeat center
+      background: url('/photos/Mishniyot-Beit-Menoha.png') no-repeat center
         center/cover;
       @extend %Biggest_card_img_sherd;
     }
