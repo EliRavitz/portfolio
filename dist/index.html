@@ -18,32 +18,48 @@
   <body>
     <div class="main_nav element-move">
       <nav>
-        <div>
+        <div class="display-small-window">
           <a href="#main_area">
             <img src="/photos/E.png" alt="logo" />
           </a>
         </div>
         <ul>
-          <li class="element-move">
+          <li class="element-move display-small-window">
             <a href="#about"><span>A</span>bout</a>
           </li>
-          <li class="element-move">
+          <li class="element-move display-small-window">
             <a href="#projects"><span>P</span>rojects</a>
           </li>
 
-          <li class="element-move">
+          <li class="element-move display-small-window">
             <a href="#contact"><span>C</span>ontact</a>
           </li>
-          <li class="element-move">
+          <li class="resume element-move display-small-window">
             <a href="cv.html" target="_blank"> <span>R</span>esume </a>
+          </li>
+          <li class="last-main-nav">
+            <span>
+              <a href="http://www.linkedin.com/in/eliravitz" target="_blank">
+                <img src="/photos/linkedin-2.png" alt="LinkedIn" />
+              </a>
+            </span>
+            <span>
+              <a
+                href="https://github.com/EliRavitz?tab=repositories"
+                target="_blank"
+              >
+                <img src="/photos/github-2.png" alt="github" />
+              </a>
+            </span>
           </li>
         </ul>
       </nav>
     </div>
     <div class="main_area" id="main_area">
-      <div class="links_nav">
+      <div class="links_nav element-move">
         <nav>
-          <ul class="element-move">
+          <ul>
+            <!-- <ul class="element-move"> -->
             <li>
               <a href="http://www.linkedin.com/in/eliravitz" target="_blank">
                 <img src="/photos/linkedin-2.png" alt="LinkedIn" />
@@ -59,6 +75,11 @@
             </li>
           </ul>
         </nav>
+        <button class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
       <div class="starting_area">
         <h3 class="element-move">Hi, my name is</h3>
@@ -70,9 +91,11 @@
           I recently graduated through self-study and have completed various<br />
           projects that showcase my skills across multiple technologies.
         </p>
-        <a href="#contact" class="element-move">
-          I'm already convinced, take me to your contact details
-        </a>
+        <button class="element-move">
+          <a href="#contact">
+            I'm already convinced, take me to your contact details
+          </a>
+        </button>
       </div>
     </div>
     <div class="main_about" id="about">
@@ -243,14 +266,21 @@
           </p>
           <div class="Links_content_card">
             <h3>Links:</h3>
-            <a href="https://rad-beignet-2af5da.netlify.app/">Website</a>
-            <a href="https://github.com/EliRavitz/find-the-treasure-backend"
+            <a target="_blank" href="https://rad-beignet-2af5da.netlify.app/"
+              >Website</a
+            >
+            <a
+              target="_blank"
+              href="https://github.com/EliRavitz/find-the-treasure-backend "
               >GitHub-backEnd
             </a>
-            <a href="https://github.com/EliRavitz/find-the-treasure-frontend"
+            <a
+              target="_blank"
+              href="https://github.com/EliRavitz/find-the-treasure-frontend"
               >GitHub-frontEnd</a
             >
             <a
+              target="_blank"
               href="https://github.com/EliRavitz/find-the-treasure-frontend/blob/main/README.md"
               >about the project</a
             >
@@ -283,7 +313,9 @@
           </p>
           <div class="Links_content_card">
             <h3>Links:</h3>
-            <a href="https://kaleidoscopic-kulfi-f3fdab.netlify.app/"
+            <a
+              target="_blank"
+              href="https://kaleidoscopic-kulfi-f3fdab.netlify.app/"
               >Website</a
             >
           </div>
@@ -310,7 +342,9 @@
           </p>
           <div class="Links_content_card">
             <h3>Links:</h3>
-            <a href="https://github.com/EliRavitz/portfolio">GitHub</a>
+            <a href="https://github.com/EliRavitz/portfolio" target="_blank"
+              >GitHub</a
+            >
           </div>
           <div class="List_content_Biggest_card">
             <span>HTML</span>
@@ -328,18 +362,15 @@
         <div class="div_main_content_card">
           <h2>Mishniyot Beit Menoha</h2>
           <p class="Extended_explanation">
-            A very interesting project that ordered for a fee. <br />The members
-            of the Tripolitan community have a practice on the day of the death
-            of their relatives to read a specially compiled book that unites
-            texts from different sources in the Bible. The entire text is
-            divided among the relatives and everyone gets a part to read.<br />
+            A very interesting project I did for a client. <br />The members of
+            the Tripolitan community have to read the book "Beit Menoha" on the
+            day of death of their relatives. Everyone reads a section.<br />
             In the project I built, each of the relatives can enter the website
-            and receive a part to read that have not yet been read and are not
-            being read at the moment. <br />The project integrates an external
-            API to complete the relevant text, Server side for managing the
-            division of segments and managing users, Client side that allows
-            opening new readings and displaying the unprocessed text that comes
-            from the API in a logical and readable way.
+            and receive a part to read that have not yet been read. <br />The
+            project integrates an external API to complete the relevant text,
+            Server side for managing the division of segments and managing
+            users, Client side that allows opening new calls and tracking
+            existing calls.
           </p>
           <div class="Links_content_card">
             <h3>Links:</h3>
@@ -376,16 +407,22 @@
     <footer>
       <div>
         <ul>
-          <li>Email:</li>
-          <li>Linkedin:</li>
-          <li>Github:</li>
-        </ul>
-        <ul>
+          <li>
+            <a target="_blank" href="http://www.linkedin.com/in/eliravitz"
+              >Linkedin</a
+            >
+          </li>
           <li>eliravi123@gmail.com</li>
-          <li>http://www.linkedin.com/in/eliravitz</li>
-          <li>https://github.com/EliRavitz?tab=repositories</li>
+          <li>
+            <a
+              target="_blank"
+              href="https://github.com/EliRavitz?tab=repositories"
+              >Github</a
+            >
+          </li>
         </ul>
       </div>
+
       <p>&copy; eli ravitz</p>
     </footer>
   </body>

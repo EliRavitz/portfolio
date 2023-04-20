@@ -1,6 +1,11 @@
 const openingElement = Array.from(
   document.getElementsByClassName('element-move')
 )
+const mainNav = document.querySelector('.main_nav')
+const lastMainNav = document.querySelector('.last-main-nav')
+
+const displaySmallWindow = document.querySelectorAll('.display-small-window')
+const hamburger = document.querySelector('.hamburger')
 const mainAbout = document.querySelector('.main_about')
 const skillsList = Array.from(document.getElementsByClassName('skills_1'))
 const mainProjects = document.querySelector('.main_projects')
@@ -12,10 +17,15 @@ const biggestCard3 = document.querySelector('.Biggest_card3')
 const biggestCard4 = document.querySelector('.Biggest_card4')
 
 // ////////////////////////////////////
+const windowWidth = window.innerWidth
 
 const openingHandler = () => {
   const tempArray = openingElement.splice(5, 1)
-  const newOpeningElement = openingElement.concat(tempArray)
+  const newOpeningElement =
+    windowWidth > 500
+      ? openingElement.concat(tempArray)
+      : openingElement.concat(tempArray).slice(4)
+
   newOpeningElement.forEach((element, i) => {
     if (i !== newOpeningElement.length - 1) {
       setTimeout(() => {
@@ -35,15 +45,44 @@ const openingHandler = () => {
 }
 openingHandler()
 
+//Handles opening and closing the menu on a narrow screen
+
+hamburger.addEventListener('click', function () {
+  displaySmallWindow.forEach((item) => {
+    item.classList.add('display-small-window-activ')
+  })
+  hamburger.classList.toggle('active')
+  mainNav.classList.toggle('active_mainNav')
+})
+
+displaySmallWindow.forEach((item) => {
+  item.addEventListener('click', function () {
+    mainNav.classList.toggle('active_mainNav')
+    hamburger.classList.toggle('active')
+  })
+})
+
 // Handles all animations related to scrolling
 
 const scrollHeight = document.body.scrollHeight - window.innerHeight
 function animateOnScroll() {
   const scrollPercent = (window.scrollY / scrollHeight) * 100
 
-  if (scrollPercent >= 10) {
-    mainAbout.classList.add('main_about_animate')
+  if (scrollPercent >= 7 && windowWidth > 500)
+    lastMainNav.classList.add('last-main-nav-appears')
+  if (scrollPercent <= 7 && windowWidth > 500)
+    lastMainNav.classList.remove('last-main-nav-appears')
 
+  if (
+    (scrollPercent >= 10 && windowWidth > 500) ||
+    (scrollPercent >= 3 && windowWidth < 500)
+  ) {
+    mainAbout.classList.add('main_about_animate')
+  }
+  if (
+    (scrollPercent >= 10 && windowWidth > 500) ||
+    (scrollPercent >= 27 && windowWidth < 500)
+  ) {
     skillsList.forEach((skil, i) => {
       setTimeout(() => {
         skil.classList.add('skills_list_light')
@@ -51,7 +90,10 @@ function animateOnScroll() {
     })
   }
 
-  if (scrollPercent >= 45) {
+  if (
+    (scrollPercent >= 45 && windowWidth > 500) ||
+    (scrollPercent >= 38 && windowWidth < 500)
+  ) {
     mainProjects.classList.add('main_projects_animate')
   }
 }
