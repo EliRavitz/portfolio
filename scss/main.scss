@@ -396,7 +396,7 @@ body {
 
       .bigger_Card,
       .bigger_Card_left,
-      .bigger_Card_riget {
+      .bigger_Card_right {
         .div_main_content_card {
           h2 {
             animation: bigger_card_animate2 0.3s forwards;
@@ -440,7 +440,6 @@ body {
       @keyframes bigger_card_animate1_right {
         to {
           transform-origin: right;
-          transform: scale(1.6);
           transform: scale(1.6);
         }
       }
