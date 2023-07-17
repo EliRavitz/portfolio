@@ -233,14 +233,16 @@ body {
       color: black;
       display: grid;
       grid-template-columns: 25% 25% 25% 25%;
-      grid-template-rows: 20rem; }
+      grid-template-rows: 20rem;
+      grid-gap: 3rem 0rem; }
       .main_projects div .cardArae .card {
         height: 20rem;
         width: 15rem;
         font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
         text-align: center;
         background-color: #0c1523;
-        color: #c2ccec; }
+        color: #c2ccec;
+        margin-bottom: 4rem; }
         .main_projects div .cardArae .card:hover {
           cursor: pointer; }
         .main_projects div .cardArae .card .img1, .main_projects div .cardArae .card .img2, .main_projects div .cardArae .card .img3, .main_projects div .cardArae .card .img4, .main_projects div .cardArae .card .img5 {
