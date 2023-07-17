@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0%;
   margin: 0%;
@@ -242,12 +243,12 @@ body {
         color: #c2ccec; }
         .main_projects div .cardArae .card:hover {
           cursor: pointer; }
-        .main_projects div .cardArae .card .img1, .main_projects div .cardArae .card .img2, .main_projects div .cardArae .card .img3, .main_projects div .cardArae .card .img4 {
+        .main_projects div .cardArae .card .img1, .main_projects div .cardArae .card .img2, .main_projects div .cardArae .card .img3, .main_projects div .cardArae .card .img4, .main_projects div .cardArae .card .img5 {
           width: 14rem;
           height: 10rem;
           margin: auto;
           margin-top: 0.5rem; }
-        .main_projects div .cardArae .card .img2 .Paid_project, .main_projects div .cardArae .card .img4 .Paid_project {
+        .main_projects div .cardArae .card .img2 .Paid_project, .main_projects div .cardArae .card .img4 .Paid_project, .main_projects div .cardArae .card .img5 .Paid_project {
           margin-left: 1px;
           width: 3.5rem;
           height: 3.5rem;
@@ -267,6 +268,28 @@ body {
           background: url("/photos/portfolio.png") no-repeat center center/cover; }
         .main_projects div .cardArae .card .img4 {
           background: url("/photos/Mishniyot-Beit-Menoha.png") no-repeat center center/cover; }
+          .main_projects div .cardArae .card .img4 .not_my_design {
+            width: 14rem;
+            height: 4ץ5rem;
+            font-size: 1.2rem;
+            color: #000000;
+            background-color: rgba(213, 123, 123, 0.746);
+            border: 1px solid black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; }
+        .main_projects div .cardArae .card .img5 {
+          background: url("/photos/book.png") no-repeat center center/cover; }
+          .main_projects div .cardArae .card .img5 .not_my_design {
+            width: 14rem;
+            height: 4ץ5rem;
+            font-size: 1.2rem;
+            color: #000000;
+            background-color: rgba(213, 123, 123, 0.746);
+            border: 1px solid black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; }
         .main_projects div .cardArae .card .div_main_content_card {
           height: 10rem;
           display: flex;
@@ -356,7 +379,7 @@ body {
       .Biggest_card_2 button:hover {
         cursor: pointer;
         color: #8892b0; }
-    .Biggest_card_2 .Biggest_card_imgBG1, .Biggest_card_2 .Biggest_card_imgBG2, .Biggest_card_2 .Biggest_card_imgBG3, .Biggest_card_2 .Biggest_card_imgBG4 {
+    .Biggest_card_2 .Biggest_card_imgBG1, .Biggest_card_2 .Biggest_card_imgBG2, .Biggest_card_2 .Biggest_card_imgBG3, .Biggest_card_2 .Biggest_card_imgBG4, .Biggest_card_2 .Biggest_card_imgBG5 {
       animation: Biggest_card_animate2 0.5s forwards;
       margin: auto;
       padding-top: 1rem;
@@ -370,6 +393,18 @@ body {
       background: url("/photos/portfolio.png") no-repeat center center/cover; }
     .Biggest_card_2 .Biggest_card_imgBG4 {
       background: url("/photos/Mishniyot-Beit-Menoha.png") no-repeat center center/cover; }
+    .Biggest_card_2 .Biggest_card_imgBG5 {
+      background: url("/photos/book.png") no-repeat center center/cover; }
+    .Biggest_card_2 .not_my_design {
+      height: 4.5rem;
+      margin-top: 5rem;
+      font-size: 1.4rem;
+      color: #000000;
+      background-color: rgba(213, 123, 123, 0.918);
+      border: 1px solid black;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
     .Biggest_card_2 .div_main_content_card {
       height: 60vh;
       display: flex;

@@ -348,6 +348,7 @@ body {
           flex-direction: column;
           justify-content: center;
         }
+
         .img1 {
           background: url('/photos/find_the_treasure.png') no-repeat center
             center/cover;
@@ -373,6 +374,38 @@ body {
 
           .Paid_project {
             @extend %Paid_project;
+          }
+
+          .not_my_design {
+            width: 14rem;
+            height: 4ץ5rem;
+            font-size: 1.2rem;
+            color: #000000;
+            background-color: rgba(213, 123, 123, 0.746);
+            border: 1px solid black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+          }
+        }
+        .img5 {
+          background: url('/photos/book.png') no-repeat center center/cover;
+          @extend %img-sherd;
+
+          .Paid_project {
+            @extend %Paid_project;
+          }
+
+          .not_my_design {
+            width: 14rem;
+            height: 4ץ5rem;
+            font-size: 1.2rem;
+            color: #000000;
+            background-color: rgba(213, 123, 123, 0.746);
+            border: 1px solid black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
           }
         }
 
@@ -524,6 +557,22 @@ body {
       background: url('/photos/Mishniyot-Beit-Menoha.png') no-repeat center
         center/cover;
       @extend %Biggest_card_img_sherd;
+    }
+    .Biggest_card_imgBG5 {
+      background: url('/photos/book.png') no-repeat center center/cover;
+      @extend %Biggest_card_img_sherd;
+    }
+
+    .not_my_design {
+      height: 4.5rem;
+      margin-top: 5rem;
+      font-size: 1.4rem;
+      color: #000000;
+      background-color: rgba(213, 123, 123, 0.918);
+      border: 1px solid black;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
 
     .div_main_content_card {

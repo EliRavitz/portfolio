@@ -15,6 +15,7 @@ const biggestCard1 = document.querySelector('.Biggest_card1')
 const biggestCard2 = document.querySelector('.Biggest_card2')
 const biggestCard3 = document.querySelector('.Biggest_card3')
 const biggestCard4 = document.querySelector('.Biggest_card4')
+const biggestCard5 = document.querySelector('.Biggest_card5')
 
 // ////////////////////////////////////
 const windowWidth = window.innerWidth
@@ -150,6 +151,7 @@ function handleClickdProjects(event) {
       if (classItem === 'card2') biggestCard2.classList.add('open_Biggest_card')
       if (classItem === 'card3') biggestCard3.classList.add('open_Biggest_card')
       if (classItem === 'card4') biggestCard4.classList.add('open_Biggest_card')
+      if (classItem === 'card5') biggestCard5.classList.add('open_Biggest_card')
     })
   }
 }
